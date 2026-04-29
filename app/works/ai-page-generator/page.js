@@ -40,17 +40,17 @@ const problems = [
   {
     n: "01",
     title: "Brand compliance failures",
-    body: "Stakeholders used wrong color scales, incorrect component combinations, and off-brand layouts — producing pages that quietly eroded visual standards without anyone noticing until it was too late.",
+    body: "Stakeholders had the correct modules, but had a hard time telling the story properly. Choosing wrong modules for the page, not adding CTAs when necessary or choosing assets that didn't fit was only some of the problems",
   },
   {
     n: "02",
     title: "Design as a bottleneck",
-    body: "Every page request funneled through the design team, creating a backlog that slowed go-to-market velocity for marketing and growth initiatives across multiple markets simultaneously.",
+    body: "We had a funnel where a designer needs to approve the page, but that was creating a lot of extra work, since every page had small issues. Creating a backlog that slowed go-to-market velocity for marketing and growth initiatives across multiple markets.",
   },
   {
     n: "03",
     title: "Rework as the default",
-    body: "Pages launched without design review regularly required post-publication corrections — burning engineering time on reversible decisions that a better-designed system would have prevented entirely.",
+    body: "Every page needed to go trough a Designer, that would spend a big part of their day re-working the page, or contacting different stakeholders to make changes on the page.",
   },
 ];
 
@@ -72,8 +72,8 @@ const discovery = [
 const processSteps = [
   {
     n: "01",
-    title: "Reframing the problem",
-    body: "The initial brief was \u201Cimprove the CMS onboarding.\u201D But the audit told a different story — this wasn't an onboarding problem, it was a system problem. Stakeholders weren't failing because they didn't understand the tool. They were failing because the tool gave them too much freedom without enough guidance.",
+    title: "Reframing",
+    body: "The initial thought was \u201Cimprove the CMS onboarding.\u201D But the audit told a different story — this wasn't an onboarding problem, it was a system problem. Stakeholders weren't failing because they didn't understand the tool. They were failing because the tool gave them too much freedom without enough guidance.",
     aside:
       "Reframing from a UX task to a system design problem changed everything. It opened the door to an AI-driven solution that wouldn't have been visible through a narrower lens.",
   },
@@ -85,31 +85,24 @@ const processSteps = [
   {
     n: "03",
     title: "Exploring directions",
-    body: "Before landing on conversational AI, three distinct directions were explored and evaluated against the same criteria: flexibility, compliance guarantee, learning curve, and maintenance overhead.",
+    body: "Before landing on conversational AI, We analyzed the current situation and the new possibility on: flexibility, compliance guarantee, learning curve, and maintenance overhead.",
     concepts: [
       {
-        label: "Concept A",
-        name: "Form Wizard",
+        label: "Current situation",
+        name: "Block Builder/Templates",
         description:
-          "Multi-step form where stakeholders select a template and fill structured fields.",
-        verdict: "Rigid. Can't handle edge cases. Requires ongoing maintenance.",
+          "Visual editor with pre-approved component library. Or stakeholders select a template and fill structured fields.",
+        verdict:
+          "High learning curve. Still allows invalid combinations. And requires ongoing Maintance",
         selected: false,
       },
       {
-        label: "Concept B",
+        label: "New solution",
         name: "Conversational AI",
         description:
           "An AI assistant guides users through a natural conversation, then generates a compliant page using real design system components.",
         verdict: "Flexible. Scales without maintenance. Handles ambiguity.",
         selected: true,
-      },
-      {
-        label: "Concept C",
-        name: "Block Builder",
-        description:
-          "Visual editor with pre-approved component library.",
-        verdict: "High learning curve. Still allows invalid combinations.",
-        selected: false,
       },
     ],
   },
@@ -369,8 +362,7 @@ export default function AiPageGeneratorCaseStudy() {
           </div>
           <p className="mb-14 max-w-3xl text-lg leading-relaxed text-white/80 md:mb-20 md:text-xl">
             The design team was a bottleneck they hadn't designed themselves into. The CMS gave
-            stakeholders full freedom. The design system gave them no guidance. The result was
-            predictable.
+            stakeholders full freedom, without enough guidance. The result was predictable.
           </p>
         </motion.section>
 
