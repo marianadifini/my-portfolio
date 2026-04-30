@@ -392,6 +392,22 @@ export default function AiPageGeneratorCaseStudy() {
           ))}
         </motion.section>
 
+        {/* BEFORE / AFTER */}
+        <motion.section
+          className="mx-auto mt-20 max-w-7xl px-6 sm:px-10 md:mt-28 md:px-16"
+          {...fadeUp}
+        >
+          <figure className="mx-auto max-w-[1024px] overflow-hidden rounded-2xl border border-white/[0.08] bg-transparent p-2 md:p-3">
+            <img
+              src="/current-situation-before-ai.svg"
+              alt="Before and after comparison of stakeholder-generated pages — pre-AI templates vs. AI-generated compliant output"
+              className="mx-auto block h-auto w-full rounded-xl"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+        </motion.section>
+
         <section className="mx-auto mt-20 max-w-7xl px-6 sm:px-10 md:mt-28 md:px-16">
           <PullQuote
             quote="I spend more time chasing the design team than building the actual partnership."
@@ -445,22 +461,6 @@ export default function AiPageGeneratorCaseStudy() {
               ensuring every output is automatically compliant with Qonto's design system?
             </p>
           </div>
-        </motion.section>
-
-        {/* BEFORE / AFTER */}
-        <motion.section
-          className="mx-auto mt-20 max-w-7xl px-6 sm:px-10 md:mt-28 md:px-16"
-          {...fadeUp}
-        >
-          <figure className="overflow-hidden rounded-2xl border border-white/[0.08] bg-white p-6 md:p-10">
-            <img
-              src="/before_after_horizontal.svg"
-              alt="Before and after comparison of stakeholder-generated pages — pre-AI templates vs. AI-generated compliant output"
-              className="block h-auto w-full"
-              loading="lazy"
-              decoding="async"
-            />
-          </figure>
         </motion.section>
 
         {/* PROCESS */}
@@ -544,14 +544,14 @@ export default function AiPageGeneratorCaseStudy() {
 
         {/* AI SYSTEM DIAGRAM */}
         <motion.section
-          className="mx-auto mt-20 max-w-7xl px-6 sm:px-10 md:mt-28 md:px-16"
+          className="mx-auto mt-20 w-full max-w-[92rem] px-3 sm:px-6 md:mt-28 md:px-8"
           {...fadeUp}
         >
-          <figure className="overflow-hidden rounded-2xl border border-white/[0.08] bg-white p-6 md:p-10">
+          <figure className="mx-auto max-w-[1440px] overflow-hidden rounded-2xl border border-white/[0.08] bg-transparent p-2 md:p-3">
             <img
-              src="/ai_system_diagram_v2.svg"
+              src="/ai-schema-conversational-page-creator.svg"
               alt="AI system architecture diagram — how user input, design system constraints, and content guidelines flow through the model"
-              className="block h-auto w-full"
+              className="mx-auto block h-auto w-full rounded-xl"
               loading="lazy"
               decoding="async"
             />
@@ -586,7 +586,7 @@ export default function AiPageGeneratorCaseStudy() {
 
         <section className="mx-auto mt-20 max-w-7xl px-6 sm:px-10 md:mt-28 md:px-16">
           <PullQuote
-            quote="The conversation is not free-form by accident. Every chip, every branching path, every pause for a human checkpoint — these are the design. The AI is capable of producing output without them. The question is whether that output is trustworthy enough to publish."
+            quote="The conversation is not free-form by accident. Every constraint is a design decision. The AI can produce output without them — the question is whether that output is safe to publish."
             attribution="Design rationale"
           />
         </section>
